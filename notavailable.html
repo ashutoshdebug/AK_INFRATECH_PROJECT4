@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Come back Soon!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <style>
+    main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Roboto Condensed", "Patrick Hand", sans-serif;
+    }
+  </style>
+  <body>
+    <main>
+      <div id="message">We will come back to you soon!</div>
+      <div id="redirecting">
+        Redirecting to homepage in <span id="counter">3</span> seconds...
+      </div>
+    </main>
+
+    <script>
+      let counter = 3;
+      const counterSpan = document.getElementById("counter");
+
+      const interval = setInterval(() => {
+        counter--;
+        counterSpan.innerText = counter;
+
+        if (counter === 0) {
+          clearInterval(interval);
+          window.location.href = "index.html"; // ✅ Redirect to homepage
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>

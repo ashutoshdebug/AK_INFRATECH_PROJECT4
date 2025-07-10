@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InAccuWeather- Accurate weather forecasting!</title>
+    <link rel="icon" href="statics/clouds.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="navbar1">
+          <div id="navbar-inner">
+            <div id="navbar1-element1"><a href="notavailable.html">Newsletter</a></div>
+            <div id="navbar1-element2"><a href="notavailable.html">Data</a></div>
+            <div id="navbar1-element3"><a href="notavailable.html">Maps</a></div>
+            <div id="clock"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="main-container">
+        <div id="title">
+          <img src="./statics/clouds.png" alt="" />
+          <div id="website-name">InAccuWeather</div>
+        </div>
+        <div id="location">
+          <div id="location-search">
+            <div id="search-icon">
+              <img src="./statics/search.png" alt="" />
+            </div>
+            <div id="search-field">
+              <input
+                type="search"
+                name="search-location"
+                id="search-location"
+                placeholder="Search Loaction"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="pre-result">
+          <div id="result"></div>
+        </div>
+        <div id="tabs"></div>
+        <div id="forecast"></div>
+
+        <div id="chart-container">
+          <canvas id="tempChart"></canvas>
+        </div>
+      </div>
+      <footer>
+        <div id="footer-div">
+          <div id="brand-name">InAccuWeather</div>
+          <div id="social-links">
+            <span
+              ><a href="https://github.com/ashutoshdebug" target="_blank"
+                >Github</a
+              ></span
+            ><span
+              ><a href="https://linkedin.com/in/ashutosht05" target="_blank"
+                >LinkedIn</a
+              ></span
+            >
+          </div>
+        </div>
+        <div id="copyright">|All rights reserved by InAccuWeather|</div>
+      </footer>
+    </main>
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
+</html>
