@@ -1,4 +1,4 @@
-const apiKey = "dce0ddd4695d3fe36737a16ed79a5dd1";
+const apiKey = "";
 const resultDiv = document.getElementById("result");
 const forecastDiv = document.getElementById("forecast");
 const tabsDiv = document.getElementById("tabs");
